@@ -1,19 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 39px;
+        }
+
+        .main {
+            margin-top: 39px;
+        }
+
+        .r1,
+        .r2,
+        .rt1,
+        .rt2,
+        .lt1,
+        .lt2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rt1,
+        .rt2,
+        .lt1,
+        .lt2 {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            margin: 1px;
+        }
+
+        .rt1 {
+            border-radius: 95px 0px 0px 0px;
+        }
+
+        .rt1:hover {
+            background-image: linear-gradient(to bottom right, #e23a2e, #fbbf12, #27BB47);
+        }
+
+        .lt1 {
+            border-radius: 0px 95px 0px 0px;
+        }
+
+        .lt1:hover {
+            background-image: linear-gradient(to bottom left, royalblue, deeppink, gold);
+        }
+
+        .rt2 {
+            border-radius: 0px 0px 0px 95px;
+        }
+
+        .rt2:hover {
+            background-color: #1778f2;
+            transition: 2s all;
+        }
+
+        .lt2 {
+            border-radius: 0px 0px 95px 0px;
+        }
+
+        .lt2:hover {
+            background-image: linear-gradient(to top left, gold, deeppink, #1778f2);
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: red;
+            background-color: #fff;
+            cursor: pointer;
+            transition: 2s all;
+        }
+
+        footer {
+            background-color: black;
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    <div>
-        <ul>
-            <li><a href="Projects/chrome.html" target="ref">Chrome Logo</a></li>
-            <li><a href="Projects/logo.html">Insta Logo</a></li>
-            <li><a href="Projects/fb.html">Facebook Login Page</a></li>
-            <li><a href="Projects/insta.html">Instagram Login Page</a></li>
-        </ul>
+    <h1 align="center">Vishal Mishra <br> Portfolio</h1>
+    <div class="main">
+        <div class="r1">
+            <div class="rt1"><a href="Projects/chrome.html">Chrome</a></div>
+            <div class="lt1"><a href="Projects/logo.html">Insta</a></div>
+        </div>
+        <div class="r2">
+            <div class="rt2"><a href="Projects/fb.html">facebook</a></div>
+            <div class="lt2"><a href="Projects/insta.html">Instagram</a></div>
+        </div>
     </div>
+    <footer>
+        <h6>Contact me</h6>
+        <a href="mailto:vm3446284@gmail.com">Email</a>
+        <a href="tele:9958325636">Phone</a>
+    </footer>
 </body>
+
 </html>
